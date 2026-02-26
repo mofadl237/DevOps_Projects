@@ -1,0 +1,12 @@
+# In AWS USING LoadBalancer
+kind: Service
+apiVersion: v1
+metadata:
+  name:  wordpress-svc
+spec:
+  selector:
+   app: wordpress-app
+  type:  NodePort
+  ports:
+  - name:  svc-wordpress-port
+    port:  80
