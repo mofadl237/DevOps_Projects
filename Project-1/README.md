@@ -84,7 +84,8 @@ Keeps deployment idempotent
 
 No manual path editing required.
 ## Project Structure
-K8s
+![alt text](image-2.png)
+<!-- K8s
 ├── my-sql/
 │   ├── mysql-pv.yaml
 │   ├── mysql-pvc.yaml
@@ -99,7 +100,7 @@ K8s
 │   ├── service.yaml
 │   └── deploy.sh
 │
-└── deploy-all.sh
+└── deploy-all.sh -->
  
 ## Permision must be Execute
 # chmod +x deploy-all.sh
@@ -111,3 +112,7 @@ K8s
 # Pods - Deployment - SVC - PV 
 
 ![alt text](image-1.png)
+
+## Run Project Project 
+port-forward 8081:80
+![alt text](image-3.png)
